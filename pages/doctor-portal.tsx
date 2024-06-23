@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { supabase } from '../../utils/supabase';
+import { supabase } from '../utils/supabase';
 import PatientList from '../../components/doctor-portal/PatientList';
 import AppointmentList from '../../components/doctor-portal/AppointmentList';
 import VideoConsultation from '../../components/doctor-portal/VideoConsultation';
