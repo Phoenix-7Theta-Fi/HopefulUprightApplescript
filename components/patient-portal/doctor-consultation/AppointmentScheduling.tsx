@@ -18,7 +18,9 @@ const AppointmentScheduling = () => {
     const { data } = await supabase
       .from('appointments')
       .insert([{ patientId: 'patient-id', doctorId: selectedDoctorId, dateTime: selectedDateTime }]);
-    setAppointments([...appointments, data[0]]);
+    if (data) {
+      setAppointments([...appointments, data[0]]);
+    }
   };
 
   return (
