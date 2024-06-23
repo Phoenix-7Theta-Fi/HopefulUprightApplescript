@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { supabase } from '../../../utils/supabase';
+import { supabase } from '../../utils/supabase';
 
 const VideoConsultation = ({ appointmentId }: { appointmentId: string }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
